@@ -1,6 +1,6 @@
 import { Args, Int, Parent, Query, ResolveField, Resolver } from '@nestjs/graphql'
-import { Author } from './author.model'
-import { AuthorsService } from '../services/authors.service'
+import { Author } from './models/author.model'
+import { AuthorsService } from './services/authors.service'
 import { PostsService } from 'src/posts/services/posts.service'
 
 @Resolver((of) => Author)
